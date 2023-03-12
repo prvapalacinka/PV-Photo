@@ -1,4 +1,4 @@
-$('section.awSlider .carousel').carousel({
+$('.carousel').carousel({
 	pause: "hover",
   interval: 2000
 });

@@ -1,259 +1,87 @@
 :root {
-    --bonewhite-bg-color: #F9F6EE;
-    --jetblack-font-color: #343434;
-    --midnightblue: #191970;
+  --dun: #DBCFB0;
+  --ashgrey: #BFC8AD;
+  --cambridgeblue: #90B494;
+  --slategray: #718F94;
+  --ultraviolet: #545775;
 
 }
+
 a {
-    color: var(--jetblack-font-color);
+  color: var(--jetblack-font-color);
 }
+
 body {
-    margin: 0;
-    background: #F9F6EE;
-    font-family: 'Modern Sans', sans-serif;
-    font-weight: 400;
-    font: var(--jetblack-font-color);
+  margin: 0;
+  background: #343434;
+  font-family: 'Modern Sans', sans-serif;
+  font-weight: 400;
 
-}
-
-header::after {
-content: '';
-display: table;
-clear: both;
-}
-
-nav {
-    float: right;
-
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 30px;
-    position: relative;
-}
-
-nav ul li a {
-    color: var(--jetblack-font-color);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-
-}
-
-nav a:hover {
-color: var(--midnightblue);
-
-}
-
-nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: var(--bonewhite-bg-color);
-    position: absolute;
-    top: 0;
-    width: 100%;
-
-}
-
-.logo {
-float: left;
-padding: 10px 0;
-}
-
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-
-} */
-
-.carousel-wrapper {
-  width: 1040px;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-  border-radius: 20px;
-  margin: 100px auto 20px;
 }
 
 .carousel-container {
-  width: 800px;
-  height: 500px;
-  overflow: hidden;
+  display: block;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+
+}
+
+.btn {
+  color: #DBCFB0 !important;
+}
+
+.container {
+  width: 100%;
   margin: 0 auto;
+
 }
 
-.carousel {
-  display: flex;
-  width: 2400px;
-  animation: sliding 10s infinite;
-}
-.carousel div {
-  width: 800px;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-}
-.carousel:hover {
-  animation-play-state: paused;
-}
-.carousel .image-one {
-  background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_boat.jpeg");
-}
-.carousel .image-two {
-  background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_boats.jpeg");
-}
-.carousel .image-three {
-  background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_flowers_vir.jpeg");
-}
-.carousel .image-four {
-    background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_flowers_vir2.jpeg");
+.navbar {
+  background-color: #343434 !important;
+  min-height: 0px;
+  max-width: 100%;
 }
 
-.carousel .image-five {
-    background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_flowers_vir3.jpeg");
+.navbar-brand {
+  font-size: 30px;
+  margin-right: 37%;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
 }
 
-.carousel .image-six {
-    background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_motor.jpeg.jpeg");
+
+.nav-item {
+  padding-right: 35px;
 }
 
-.carousel .image-seven {
-    background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_petra_nose.jpeg.jpeg");
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
 }
 
-.carousel .image-eight {
-    background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_vir_petar_sea.jpeg.jpeg");
-}
-
-.carousel .image-nine {
-    background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/cro_vir_waterBW.jpeg.jpeg");
-}
-
-.carousel .image-ten {
-    background-image: url("/Users/petarvidovic/Desktop/personal_projects/PV-Photo/photos/rock_bay_zadar.jpeg");
-}
-
-@keyframes sliding {
-  30% {
-    transform: translateX(0);
-  }
-  35% {
-    transform: translateX(-800px);
-  }
-  65% {
-    transform: translateX(-800px);
-  }
-  70% {
-    transform: translateX(-1600px);
-  }
-  98% {
-    transform: translateX(-1600px);
-  }
-  100% {
-    transform: translateX(0);
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
   }
 }
-@media screen and (max-width: 768px) {
-  .carousel-wrapper {
-    width: 312px;
-    height: 210px;
-  }
 
-  .carousel-container {
-    width: 240px;
-    height: 150px;
-  }
-
-  .carousel {
-    width: 720px;
-  }
-  .carousel > div {
-    width: 240px;
-    height: 150px;
-  }
-
-  @keyframes sliding {
-    30% {
-      transform: translateX(0);
-    }
-    35% {
-      transform: translateX(-240px);
-    }
-    65% {
-      transform: translateX(-240px);
-    }
-    70% {
-      transform: translateX(-480px);
-    }
-    98% {
-      transform: translateX(-480px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-} 
-
-body{
-  background:#000;
+.dropdown {
+  position: static !important;
 }
 
-section.awSlider .carousel{
-  display:table;
-  z-index:2;
-  -moz-box-shadow: 0 0 4px #444;
-	-webkit-box-shadow: 0 0 4px #444;
-	box-shadow: 0 0 15px rgba(1,1,1,.5);
+.dropdown-menu {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  margin-top: 0px !important;
+  width: 100% !important;
 }
 
-section.awSlider{
-  margin:30px auto;
-  padding:30px;
-  position:relative;
-  display:table;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-section.awSlider:hover > img{
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  opacity:1;
-}
-
-section.awSlider img{
-   pointer-events: none;
-}
-
-section.awSlider > img{
-  position:absolute;
-  top:30px;
-  z-index:1;
-  transition:all .3s;
-  filter: blur(1.8vw);
-  -webkit-filter: blur(2vw);
-  -moz-filter: blur(2vw); 
-  -o-filter: blur(2vw); 
-  -ms-filter: blur(2vw);
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  opacity:.5;
+#carousel {
+  box-sizing: border-box;
+  size: 100px;
 }
