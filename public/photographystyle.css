@@ -1,0 +1,191 @@
+:root {
+    --dun: #DBCFB0;
+    --dunlight: #F9F6F1;
+    --ashgrey: #BFC8AD;
+    --cambridgeblue: #90B494;
+    --slategray: #718F94;
+    --ultraviolet: #545775;
+  
+  }
+  
+  a {
+    color: var(--jetblack-font-color);
+  }
+  
+  body {
+    margin: 0;
+    background: var(--dunlight);
+    font-family: 'Modern Sans', sans-serif;
+    font-weight: 400;
+  
+  }
+
+  .photopagefooter {
+    background-color:var(--dunlight)!important ;
+    color: var(--dunlight) !important;
+  }
+  
+  .carousel-container {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .carousel-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn {
+    color: #DBCFB0 !important;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  
+  }
+  
+  .navbar {
+    background-color: var(--dunlight) !important;
+    min-height: 0px;
+    max-width: 100%;
+  }
+  
+  .navbar-brand {
+    font-size: 30px;
+    margin-right: 35%;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .tooltip-inner {
+    background-color: var(--cambridgeblue);
+  }
+  
+  .tooltip.bottom .tooltip-arrow{ 
+    border-color: var(--cambridgeblue);
+  }
+  
+  .custom-tooltip {
+    --bs-tooltip-bg: var(--ultraviolet);
+  }
+  
+  .nav-item {
+    padding-right: 35px;
+  }
+  
+  .dropdown-menu {
+    background: var(--ultraviolet);
+    color: var(--dun);
+  }
+  .navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav>li>a {
+      /* (80px - line-height of 27px) / 2 = 26.5px */
+      padding-top: 26.5px;
+      padding-bottom: 26.5px;
+      line-height: 27px;
+    }
+  }
+  
+  .dropdown {
+    position: static !important;
+  }
+  
+  .dropdown-menu {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    margin-top: 0px !important;
+    width: 100% !important;
+  }
+  
+  #carousel {
+    box-sizing: border-box;
+    size: 100px;
+  }
+  
+  /* ABOUT PAGE styling */
+  
+  .about {
+    width: 100%;
+    padding: 78px 0px;
+    background-color: var(--ultraviolet);
+  }
+  
+  .about img {
+  height: auto;
+  width: 420px;
+  }
+  
+  .about-text {
+    width: 550px;
+  }
+  
+  .main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .about-text h1{
+    color: var(--ashgrey);
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h5{
+  color: var(--dun);
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  
+  }
+  
+  span {
+    color: var(--slategray);
+  }
+  
+  .about-text p{
+    color:var(--cambridgeblue);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  
+  }
+  
+  .about-button{
+    background: var(--slategray);
+    color: var(--dun);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+  
+  }
+  
+  button:hover{
+    background: transparent;
+    border: 2px solid var(--slategray);
+    cursor: pointer;
+  }
