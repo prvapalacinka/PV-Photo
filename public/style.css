@@ -22,9 +22,19 @@ body {
 .carousel-container {
   display: block;
   width: 80%;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
 
+}
+
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .btn {
@@ -45,12 +55,23 @@ body {
 
 .navbar-brand {
   font-size: 30px;
-  margin-right: 37%;
+  margin-right: 35%;
   padding: 0 20px;
   height: 40px;
   line-height: 40px;
 }
 
+.tooltip-inner {
+  background-color: var(--cambridgeblue);
+}
+
+.tooltip.bottom .tooltip-arrow{ 
+  border-color: var(--cambridgeblue);
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--ultraviolet);
+}
 
 .nav-item {
   padding-right: 35px;

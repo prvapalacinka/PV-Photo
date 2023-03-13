@@ -11,4 +11,7 @@ $('section.awSlider .carousel').on('slid.bs.carousel', function () {
 	$('section.awSlider > img').attr('src',bscn);
 });
 
-
+// enabling all tooltips: 
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
