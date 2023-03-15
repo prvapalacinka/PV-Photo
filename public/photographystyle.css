@@ -189,3 +189,26 @@
     border: 2px solid var(--slategray);
     cursor: pointer;
   }
+
+  /* PHOTO PAGE styling */
+.photography-title{
+    color: var(--ashgrey);
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+  .spacer-block{
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 100px;
+  }
+
+  .photo-block-1{
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }

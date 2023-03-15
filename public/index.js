@@ -15,3 +15,15 @@ $('section.awSlider .carousel').on('slid.bs.carousel', function () {
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+// cloudinary 
+import {Cloudinary} from '@cloudinary/url-gen'
+import {Resize} from '@cloudinary/url-gen/actions'
+
+
+
+const cldInstance = new Cloudinary({cloud: {cloudName: 'dldvhwuhn'}});
+
+
+
+// Fetch images from the web without uploading them
